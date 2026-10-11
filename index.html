@@ -15,7 +15,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(247,247,245,.9);backdrop
 .btn{border:1px solid #ddd;background:#fff;padding:10px 15px;border-radius:12px;cursor:pointer;font-weight:700}.btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}.btn.purple{background:var(--accent);color:white;border-color:var(--accent)}
 .hero{padding:78px 0 54px;display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}.eyebrow{display:inline-flex;background:var(--accent2);color:#5648dc;padding:8px 12px;border-radius:99px;font-size:13px;font-weight:800}
 h1{font-size:clamp(42px,6vw,72px);line-height:.98;letter-spacing:-4px;margin:18px 0}.hero p{font-size:18px;color:var(--muted);line-height:1.6;max-width:620px}.hero-actions{display:flex;gap:10px;margin-top:25px;flex-wrap:wrap}
-.visual{background:#171717;border-radius:30px;padding:22px;min-height:420px;position:relative;overflow:hidden;color:#fff}.visual:before{content:"";position:absolute;width:300px;height:300px;background:#6d5dfc;border-radius:50%;filter:blur(35px);right:-70px;top:-80px;opacity:.8}
+.visual{background:#171717;border-radius:30px;padding:22px;min-height:480px;position:relative;overflow:hidden;color:#fff}.visual:before{content:"";position:absolute;width:300px;height:300px;background:#6d5dfc;border-radius:50%;filter:blur(35px);right:-70px;top:-80px;opacity:.8}
 .mock{position:absolute;inset:48px 28px 28px;background:#f7f7f5;color:#111;border-radius:22px;padding:18px;transform:rotate(2deg);box-shadow:0 25px 60px #0005}.mocktop{display:flex;justify-content:space-between;font-size:12px;font-weight:800}.mocktitle{font-size:28px;font-weight:900;margin:35px 0 14px}.mockgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mini{background:#fff;border:1px solid #e9e9e9;border-radius:14px;padding:12px}.mini .pic{height:100px;border-radius:10px;background:linear-gradient(135deg,#dfe5ff,#f5dce9);display:grid;place-items:center;font-size:38px}.mini:nth-child(2) .pic{background:linear-gradient(135deg,#dff4e8,#fff0c9)}
 
 .section{padding:45px 0}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:20px}.section h2{font-size:30px;letter-spacing:-1.5px;margin:0}.muted{color:var(--muted)}
@@ -32,95 +32,3 @@ footer{border-top:1px solid var(--line);padding:30px 0 50px;color:#777;font-size
 @media(max-width:560px){.container{padding:0 16px}.grid{grid-template-columns:1fr}.hero{padding-top:50px}.visual{min-height:360px}.searchbar{flex-wrap:wrap}.searchbar select{height:42px}.searchbar input{min-width:160px}}
 
 .safe-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}.safe-heading{display:flex;align-items:center;gap:14px;margin-bottom:22px}.safe-heading h3{font-size:28px;letter-spacing:-.8px;margin:0}.safe-icon{width:58px;height:58px;background:#fff;border:1px solid #f0efeb;border-radius:16px;display:grid;place-items:center;font-size:27px;box-shadow:0 3px 8px #00000005}.match-flow{display:flex;align-items:center;justify-content:space-around;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 12px;box-shadow:0 3px 8px #00000004}.match-flow>div{display:flex;flex-direction:column;align-items:center;gap:10px;min-width:58px}.flow-num{width:54px;height:54px;border-radius:50%;background:#f47700;color:#fff;display:grid;place-items:center;font-weight:900;font-size:21px}.match-flow b{font-size:17px}.match-flow i{height:2px;background:#f5c79f;flex:1;position:relative;max-width:90px}.match-flow i:after{content:"";position:absolute;right:0;top:-4px;width:8px;height:8px;border-top:2px solid #f5c79f;border-right:2px solid #f5c79f;transform:rotate(45deg)}.match-label{margin:26px 0 15px;font-size:21px}.match-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.match-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;min-height:112px;box-shadow:0 3px 8px #00000004}.match-card b{font-size:17px}.match-card em{font-style:normal;color:#f47700;font-size:24px;margin-right:7px}.match-card p,.safe-row p{margin:7px 0 0;color:var(--muted);font-size:14px;line-height:1.5}.safe-list{display:grid;gap:13px}.safe-row{display:flex;align-items:center;gap:18px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:0 3px 8px #00000004}.safe-row>span{width:48px;height:48px;flex:0 0 48px;border-radius:50%;display:grid;place-items:center;background:#f8f8f3;color:#55a765;font-weight:900;font-size:20px}.safe-row b{font-size:17px}.safe-row p{margin-top:3px}.safe-note{margin-top:14px;border:2px solid #5bad69;border-radius:15px;color:#55a765;text-align:center;padding:13px 16px;font-weight:800;line-height:1.45}@media(max-width:800px){.safe-grid{grid-template-columns:1fr;gap:32px}.safe-heading h3{font-size:25px}.match-card{padding:16px}.safe-row{padding:15px}}
-</style>
-</head>
-<body>
-<header><div class="container nav">
-  <div class="logo">Uni<span>Rent</span></div>
-  <nav class="navlinks"><a href="#browse">Khám phá</a><a href="#safe-rental">Safe Rental</a><a href="#how">Cách hoạt động</a><a href="#sell">Cho thuê</a><a href="#" onclick="event.preventDefault();openModal('rent')">Đăng món đồ</a></nav>
-  <div class="actions"><button class="btn" onclick="openModal('login')">Đăng nhập</button><button class="btn primary" onclick="openModal('register')">Đăng ký</button></div>
-</div></header>
-
-<main>
-<section class="container hero">
-  <div><span class="eyebrow">P2P rental dành riêng cho sinh viên</span>
-    <h1>Thuê đồ thông minh.<br><span style="color:#6d5dfc">Tiết kiệm hơn.</span></h1>
-    <p>UniRent kết nối sinh viên có đồ chưa dùng với sinh viên đang cần — từ máy ảnh, máy chiếu đến áo dài, sách và đồ cắm trại.</p>
-    <div class="hero-actions"><a class="btn primary" href="#browse" style="text-decoration:none">Khám phá đồ thuê →</a><button class="btn" onclick="openModal('rent')">💰 Cho thuê & kiếm thêm</button></div>
-  </div>
-  <div class="visual"><div class="mock"><div class="mocktop"><span>UniRent</span><span>📍 TP.HCM</span></div><div class="mocktitle">Đồ hot gần bạn</div><div class="mockgrid">
-    <div class="mini"><div class="pic">📷</div><b>Fujifilm X-A7</b><br><small>120k/ngày</small></div>
-    <div class="mini"><div class="pic">📽️</div><b>Máy chiếu mini</b><br><small>70k/ngày</small></div>
-  </div></div></div>
-</section>
-
-<section class="section container" id="browse">
-  <div class="section-head"><div><h2>Đồ đang được thuê</h2><div class="muted">Lựa chọn từ cộng đồng sinh viên</div></div><span id="count" class="muted"></span></div>
-  <div class="searchbar"><input id="search" placeholder="Tìm máy ảnh, sách, áo dài..." oninput="render()"><select id="sort" onchange="render()"><option value="new">Mới nhất</option><option value="low">Giá thấp nhất</option><option value="high">Giá cao nhất</option></select></div>
-  <div class="chips">
-    <button class="chip active" onclick="filterCat('Tất cả',this)">Tất cả</button><button class="chip" onclick="filterCat('Công nghệ',this)">💻 Công nghệ</button><button class="chip" onclick="filterCat('Học tập',this)">📚 Học tập</button><button class="chip" onclick="filterCat('Sự kiện',this)">👗 Sự kiện</button><button class="chip" onclick="filterCat('Lifestyle',this)">🏕️ Lifestyle</button>
-  </div>
-  <div class="grid" id="products"></div>
-</section>
-
-<section class="section container" id="safe-rental"><div class="section-head"><div><h2>Why Are We Different?</h2><div class="muted">Thuê đồ an tâm hơn — cho cả người thuê và chủ đồ.</div></div></div><div class="safe-grid"><div class="safe-column"><div class="safe-heading"><span class="safe-icon">🤖</span><h3>Smart Matching</h3></div><div class="match-flow"><div><span class="flow-num">1</span><b>Need</b></div><i></i><div><span class="flow-num">2</span><b>Match</b></div><i></i><div><span class="flow-num">3</span><b>Rent</b></div></div><h3 class="match-label">Matches based on:</h3><div class="match-grid"><div class="match-card"><b><em>•</em> Item</b><p>Connects the right item</p></div><div class="match-card"><b><em>•</em> Location</b><p>With the right person</p></div><div class="match-card"><b><em>•</em> Rental time</b><p>At the right time</p></div><div class="match-card"><b><em>•</em> Budget</b><p>At the right price</p></div></div></div><div class="safe-column"><div class="safe-heading"><span class="safe-icon">🛡️</span><h3>Safe Rental</h3></div><div class="safe-list"><div class="safe-row"><span>1</span><div><b>Deposit</b><p>Ensures commitment and item safety</p></div></div><div class="safe-row"><span>2</span><div><b>Rating system</b><p>Builds trust through community feedback</p></div></div><div class="safe-row"><span>3</span><div><b>Secure payment</b><p>Protects financial transactions</p></div></div><div class="safe-row"><span>4</span><div><b>Transaction protection</b><p>Safeguards the rental process</p></div></div></div><div class="safe-note">Together, these elements reduce uncertainty for both renters and owners.</div></div></div></section>
-<section class="section container" id="how"><div class="section-head"><div><h2>Thuê trong 3 bước</h2><div class="muted">Không cần mua món đồ chỉ dùng vài lần.</div></div></div>
-<div class="how"><div class="step"><div class="num">1</div><h3>Tìm đồ</h3><p>Lọc theo danh mục, giá và khu vực trường học để tìm món phù hợp.</p></div><div class="step"><div class="num">2</div><h3>Đặt thuê</h3><p>Chọn thời gian, nhắn chủ đồ và thống nhất điểm nhận/trả.</p></div><div class="step"><div class="num">3</div><h3>Dùng & trả</h3><p>Kiểm tra tình trạng, sử dụng và trả đúng thời gian. Đánh giá sau giao dịch.</p></div></div></section>
-
-<section class="container" id="sell"><div class="cta"><div><h2>Đồ bạn ít dùng?</h2><p>Biến nó thành thu nhập thêm cùng cộng đồng sinh viên.</p></div><button class="btn" onclick="openModal('rent')">Đăng món đồ miễn phí →</button></div></section>
-</main>
-<footer><div class="credits-wrap">
-    <div class="credits-top">
-      <span>FLUX MEDIA ·</span>
-      <span>GES2603</span>
-    </div>
-    <div class="credits-names">
-      <span>Lekhyna_</span>
-      <span>Danh_</span>
-      <span>Anh_</span>
-      <span>Quyên_</span>
-      <span>Thịnh</span>
-    </div>
-    <div class="credits-bottom">
-      <span>© 2026 UniRent · P2P rental cho sinh viên · TP.HCM</span>
-    </div>
-  </div>
-</footer>
-
-<div class="modal" id="modal"><div class="modalbox"><div class="modalhead"><h2 id="modalTitle">Đăng món đồ</h2><button class="close" onclick="closeModal()">×</button></div><div id="modalContent"></div></div></div>
-<div class="toast" id="toast"></div>
-
-<script>
-const data=[
- {name:"Fujifilm X-A7",cat:"Công nghệ",price:120,icon:"📷",bg:"linear-gradient(135deg,#e9e1ff,#ffe9dc)",owner:"Minh Anh",school:"ĐH Văn Lang"},
- {name:"Máy chiếu mini",cat:"Công nghệ",price:70,icon:"📽️",bg:"linear-gradient(135deg,#dff4e8,#fff0c9)",owner:"Quốc Bảo",school:"UEH"},
- {name:"Máy tính Casio FX-580",cat:"Học tập",price:20,icon:"🧮",bg:"linear-gradient(135deg,#e9f0ff,#e9e9e9)",owner:"Thảo",school:"HUTECH"},
- {name:"Áo dài trắng",cat:"Sự kiện",price:80,icon:"👗",bg:"linear-gradient(135deg,#fff,#eadfff)",owner:"Linh",school:"ĐH Kinh tế"},
- {name:"Lều 2 người",cat:"Lifestyle",price:100,icon:"⛺",bg:"linear-gradient(135deg,#e6f4e8,#dcecff)",owner:"Khang",school:"Tôn Đức Thắng"},
- {name:"GoPro Hero 10",cat:"Công nghệ",price:150,icon:"🎥",bg:"linear-gradient(135deg,#f4e2e2,#e2eaff)",owner:"Duy",school:"RMIT"},
- {name:"Micro thu âm",cat:"Công nghệ",price:90,icon:"🎙️",bg:"linear-gradient(135deg,#eee,#dce8ff)",owner:"Phúc",school:"FPT"},
- {name:"Sách IELTS 15",cat:"Học tập",price:15,icon:"📚",bg:"linear-gradient(135deg,#fff1d8,#e8efff)",owner:"Ngọc",school:"USSH"}];
-let category="Tất cả";
-function render(){
- let q=document.getElementById("search").value.toLowerCase(), sort=document.getElementById("sort").value;
- let arr=data.filter(x=>(category==="Tất cả"||x.cat===category)&&x.name.toLowerCase().includes(q));
- if(sort==="low")arr.sort((a,b)=>a.price-b.price); if(sort==="high")arr.sort((a,b)=>b.price-a.price);
- document.getElementById("count").textContent=arr.length+" món";
- document.getElementById("products").innerHTML=arr.map((x,i)=>`<article class="card"><div class="photo" style="background:${x.bg}"><span class="tag">${x.cat}</span><button class="heart" onclick="like(this)">♡</button>${x.icon}</div><div class="cardbody"><div class="title">${x.name}</div><div class="price">${x.price}.000đ <span>/ ngày</span></div><div class="meta">📍 ${x.school}</div><div class="owner"><span class="avatar">${x.owner[0]}</span>${x.owner} · ⭐ 4.9</div><button class="btn primary" style="width:100%;margin-top:13px" onclick="book('${x.name}',${x.price})">Thuê món này</button></div></article>`).join("");
-}
-function filterCat(c,el){category=c;document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));el.classList.add("active");render()}
-function like(b){b.textContent=b.textContent==="♡"?"♥":"♡";b.style.color=b.textContent==="♥"?"#e25555":""}
-function openModal(type){
- document.getElementById("modal").classList.add("show");
- if(type==="register"){document.getElementById("modalTitle").textContent="Tạo tài khoản UniRent";document.getElementById("modalContent").innerHTML=`<div class="form"><input placeholder="Họ và tên"><input type="email" placeholder="Email sinh viên"><input placeholder="Trường đại học / cao đẳng"><input type="password" placeholder="Tạo mật khẩu"><input type="password" placeholder="Nhập lại mật khẩu"><button class="btn purple" onclick="toast('Đăng ký demo thành công 🎉');closeModal()">Tạo tài khoản</button><small class="muted">Demo MVP — chưa lưu tài khoản vào hệ thống.</small></div>`}
- else if(type==="login"){document.getElementById("modalTitle").textContent="Chào mừng bạn";document.getElementById("modalContent").innerHTML=`<div class="form"><input placeholder="Email sinh viên"><input type="password" placeholder="Mật khẩu"><button class="btn primary" onclick="toast('Đăng nhập demo thành công!');closeModal()">Đăng nhập</button><small class="muted">Demo MVP — chưa kết nối tài khoản thật.</small></div>`}
- else {document.getElementById("modalTitle").textContent="Đăng món đồ cho thuê";document.getElementById("modalContent").innerHTML=`<div class="form"><input placeholder="Tên món đồ"><select><option>Chọn danh mục</option><option>Công nghệ</option><option>Học tập</option><option>Sự kiện</option><option>Lifestyle</option></select><input placeholder="Giá thuê / ngày (VNĐ)"><input placeholder="Khu vực / trường"><textarea placeholder="Mô tả tình trạng, phụ kiện đi kèm..."></textarea><button class="btn purple" onclick="toast('Đã tạo tin đăng demo 🎉');closeModal()">Đăng tin miễn phí</button></div>`}
-}
-function book(name,price){openModal("rent");document.getElementById("modalTitle").textContent="Đặt thuê — "+name;document.getElementById("modalContent").innerHTML=`<div class="form"><p><b>${price}.000đ/ngày</b> · Bảo vệ giao dịch P2P</p><input type="date"><input type="date"><input placeholder="Tin nhắn cho chủ đồ"><button class="btn primary" onclick="toast('Đã gửi yêu cầu thuê 🎉');closeModal()">Gửi yêu cầu thuê</button></div>`}
-function closeModal(){document.getElementById("modal").classList.remove("show")}
-function toast(t){const e=document.getElementById("toast");e.textContent=t;e.classList.add("show");setTimeout(()=>e.classList.remove("show"),2500)}
-render();
-</script>
-</body>
-</html>
-
